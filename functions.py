@@ -1,5 +1,6 @@
+
 def logo():
-	print(""" 
+	print("""
  ,,
 `""*$b..
      ""*$o.
@@ -25,12 +26,12 @@ def logo():
                                      "
 """)
 print("""
-  ________.__  __                   /\          __________.__             .___      
- /   _____|___/  |______ ___________)/   ______ \______   |  | _____    __| _/____  
- \_____  \|  \   __\__  \\_  __ \__  \  /  ___/  |    |  _|  | \__  \  / __ _/ __ \ 
- /        |  ||  |  / __ \|  | \// __ \_\___ \   |    |   |  |__/ __ \/ /_/ \  ___/ 
+  ________.__  __                   /\          __________.__             .___
+ /   _____|___/  |______ ___________)/   ______ \______   |  | _____    __| _/____
+ \_____  \|  \   __\__  \\_  __ \__  \  /  ___/  |    |  _|  | \__  \  / __ _/ __ \
+ /        |  ||  |  / __ \|  | \// __ \_\___ \   |    |   |  |__/ __ \/ /_/ \  ___/
 /_______  |__||__| (____  |__|  (____  /____  >  |______  |____(____  \____ |\___  >
-        \/              \/           \/     \/          \/          \/     \/    \/ 
+        \/              \/           \/     \/          \/          \/     \/    \/
 """);
 def prolougeresponse():
 	prolougeHavePlayed = input("Welcome! Have you played before? (Y/N)")
@@ -57,12 +58,13 @@ def quest(desc, option1, option2, option3, effect1, effect2, effect3):
 		print(effect1)
 	if answer == "2":
 		print(effect2)
-	if answer == "3": 
+	if answer == "3":
 		print(effect3)
 	while answer not in numberval:
 		print("Select again.")
 		answer = input("What do you want to do? (Select 1, 2, or 3)")
-
-
-	
-
+	if "l" in effect1:
+		life = 10
+		life - effect1[1]
+		print life
+		
