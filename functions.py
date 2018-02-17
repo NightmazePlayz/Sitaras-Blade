@@ -1,4 +1,5 @@
-
+import re
+life = 10
 def logo():
 	print("""
  ,,
@@ -64,7 +65,10 @@ def quest(desc, option1, option2, option3, effect1, effect2, effect3):
 		print("Select again.")
 		answer = input("What do you want to do? (Select 1, 2, or 3)")
 	if "l" in effect1:
-		life = 10
-		life - effect1[1]
-		print life
-		
+		effectnum = int(effect1[1])
+		print(effectnum) 
+		print(effect1[2])
+		if effect1[2] == "l":
+			life = life - effectnum
+			print(life)
+			
