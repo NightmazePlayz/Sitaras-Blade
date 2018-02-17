@@ -1,5 +1,5 @@
 import re
-global life = 10
+life = 10
 def logo():
 	print("""
  ,,
@@ -69,6 +69,7 @@ def quest(desc, option1, option2, option3, effect1, effect2, effect3):
 		print(effectnum) 
 		print(effect1[2])
 		if effect1[2] == "l":
+			global life
 			life = life - effectnum
 			print(life)
 			
