@@ -1,5 +1,5 @@
 import re
-life = 10
+global life = 10
 def logo():
 	print("""
  ,,
